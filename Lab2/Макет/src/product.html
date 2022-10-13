@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Product</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <header class="header">
+      <logo class="logo">Bran<span>d</span></logo>
+      <div class="search">
+         <select class="mmenuu" name="type">
+            <option disabled selected>Brows</option>
+            <option value="">Home</option>
+            <option value="">Man</option>
+            <option value="">Woman</option>
+            <option value="">Kids</option>
+            <option value="">Accoseries</option>
+            <option value="">Featured</option>
+            <option value="">Hot Deals</option>
+         </select>
+         <input type="text" placeholder="Search for item..." class="input_search">
+         <button class="button_search"><a href="#button"><i class="fa fa-search"></i></a></button>
+      </div>
+      <div class=div_but>
+         <a href="#"><img src="Images/shop_Cart.svg" width="41" height="36" alt="Пример"></a>
+         <button class="myacc"><a href="#acc" class="myaccount">My account</a></button>
+      </div>
+   </header>
+
+
+   <menu class="menu" style="position:static">
+      <a href="index.html">Home</a>
+      <a href="#man">Man</a>
+      <a href="#Woman">Woman</a>
+      <a href="#Kids">Kids</a>
+      <a href="#Accoseries">Accoseries</a>
+      <a href="#Featured">Featured</a>
+      <a href="#Hot deals">Hot deals</a>
+   </menu>
+   <div class="nav">
+      <p>New Arrivals </p>
+      <p><a href="#hf">Home / Men /<span>New Arrivals</span> </a></p>
+   </div>
+
+
+
+
+   <div class="wrapper" style="margin-top: 60px; display: flex;">
+      <div class="list_menu">
+         <details>
+            
+            <summary class="category" data-toggle="dropdown">CATEGORY</summary>
+            
+               <ul class="categories_list">
+                  <li><a href="" class="gray">Accessories</a></li>
+                  <li><a href="" class="gray">Bags</a></li>
+                  <li><a href="" class="gray">Denim</a></li>
+                  <li><a href="" class="gray">Hoodies & Sweatshirts</a></li>
+                  <li><a href="" class="gray">Jackets & Coats</a></li>
+                  <li><a href="" class="gray">Pants</a></li>
+                  <li><a href="" class="gray">Polos</a></li>
+                  <li><a href="" class="gray">Shirts</a></li>
+                  <li><a href="" class="gray">Shoes</a></li>
+                  <li><a href="" class="gray">Shorts</a></li>
+                  <li><a href="" class="gray">Sweaters & Knits</a></li>
+                  <li><a href="" class="gray">T-Shirts</a></li>
+                  <li><a href="" class="gray">Tanks</a></li>
+               </ul>
+         </details>
+         <details>
+            <summary class="category">BRAND</summary>
+         </details>
+         <details>
+            <summary class="category">DESIGNER</summary>
+         </details>
+         
+      </div>
+      <div style="flex-basis: 70%; margin-left: 30px;">
+         <div class="customizer">
+            <div class="settings_panel">
+               <h4>TRENDING NOW</h4><br>
+               <div>
+                  <div>
+                     <button class="text_btn" style="border-right: 1px solid #aaaaaa;">Bohemian</button>
+                     <button class="text_btn" style="border-right: 1px solid #aaaaaa;">Floral</button>
+                     <button class="text_btn" style="border-right: none">Lace</button>
+                  </div>
+                  <div>
+                     <button class="text_btn" style="border-right: 1px solid #aaaaaa;">Floral</button>
+                     <button class="text_btn" style="border-right: 1px solid #aaaaaa;">Lace</button>
+                     <button class="text_btn" style="border-right: none">Bohemian</button>
+                  </div>
+               </div>
+            </div>
+            <div class="settings_panel">
+               <h4>SIZE</h4><br>
+               <div>
+                  <div>
+                     <input type="checkbox" name="" id="">
+                     <button class="text_btn">XXS</button>
+                     <input type="checkbox" name="" id="">
+                     <button class="text_btn">XS</button>
+                     <input type="checkbox" name="" id="">
+                     <button class="text_btn">S</button>
+                     <input type="checkbox" name="" id="">
+                     <button class="text_btn">M</button>
+                  </div>
+                  <div>
+                     <input type="checkbox" name="" id="">
+                     <button class="text_btn">L</button>
+                     <input type="checkbox" name="" id="">
+                     <button class="text_btn">XL</button>
+                     <input type="checkbox" name="" id="">
+                     <button class="text_btn">XXL</button>
+                  </div>
+               </div>
+            </div>
+            <div class="settings_panel">
+               <h4>PRICE</h4><br>
+               <div>
+                  <div id="slider"></div>
+                  <div style="display: flex; justify-content: space-between;">
+                     <h4 class="gray">$52</h4>
+                     <h4 class="gray">$400</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="show_settings">
+               <span class="show_settings_panel" ">
+                  <select style="margin-right: 10px;">
+                     <option value=""> Sort by | Name</option>
+                  </select>
+               </span>
+               <span class="show_settings_panel">
+                 <select style="margin-right: 10px;">
+                     <option value="">Show | 09</option>
+                  </select>
+               </span>
+            </div>
+         </div>
+
+            <div class="grid_product">
+               <div class="row">
+                  <div class="el_product">
+                     <a href="#1">
+                        <img src="Images/products-men-1.png" clsss= "el_img" alt="">
+                        <p>Mango people T-shirt<br><span>$52.00</span></p>
+                        <p class="hov"><span>Add to card</span></p>
+                     </a>
+                  </div>
+                  <div class="el_product">
+                     <a href="#1">
+                        <img src="Images/products-men-2.png" clsss= "el_img" alt="">
+                        <p>Mango people T-shirt<br><span>$52.00</span></p>
+                        <p class="hov"><span>Add to card</span></p>
+                     </a>
+                  </div>
+                  <div class="el_product">
+                     <a href="#1">
+                        <img src="Images/Layer_4.png" clsss= "el_img" alt="">
+                        <p>Mango people T-shirt<br><span>$52.00</span></p>
+                        <p class="hov"><span>Add to card</span></p>
+                     </a>
+                  </div>
+                  
+               </div>
+               <div class="row">
+                  <div class="el_product">
+                     <a href="#1">
+                        <img src="Images/Layer_6.png" clsss= "el_img" alt="">
+                        <p>Mango people T-shirt<br><span>$52.00</span></p>
+                        <p class="hov"><span>Add to card</span></p>
+                     </a>
+                  </div>
+                  <div class="el_product">
+                     <a href="#1">
+                        <img src="Images/thing16.png" clsss= "el_img" alt="">
+                        <p>Mango people T-shirt<br><span>$52.00</span></p>
+                        <p class="hov"><span>Add to card</span></p>
+                     </a>
+                  </div>
+                  <div class="el_product">
+                     <a href="#1">
+                        <img src="Images/thing8.png" clsss= "el_img" alt="">
+                        <p>Mango people T-shirt<br><span>$52.00</span></p>
+                        <p class="hov"><span>Add to card</span></p>
+                     </a>
+                  </div>
+                 
+               </div>
+               <div class="row">
+                  <div class="el_product">
+                     <a href="#1">
+                        <img src="Images/thing6.png" clsss= "el_img" alt="">
+                        <p>Mango people T-shirt<br><span>$52.00</span></p>
+                        <p class="hov"><span>Add to card</span></p>
+                     </a>
+                  </div>
+                  <div class="el_product">
+                     <a href="#1">
+                        <img src="Images/thing17.png" clsss= "el_img" alt="">
+                        <p>Mango people T-shirt<br><span>$52.00</span></p>
+                        <p class="hov"><span>Add to card</span></p>
+                     </a>
+                  </div>
+                  <div class="el_product">
+                     <a href="#1">
+                        <img src="Images/thing18.png" clsss= "el_img" alt="">
+                        <p>Mango people T-shirt<br><span>$52.00</span></p>
+                        <p class="hov"><span>Add to card</span></p>
+                     </a>
+                  </div>
+               
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+  <div class="pages_block">
+                    <div class="pages">
+                        <a href="" class="gray">&lt;</a>
+                        <a href="" class="gray">1</a>
+                        <a href="" class="gray">2</a>
+                        <a href="" class="gray">3</a>
+                        <a href="" class="gray">4</a>
+                        <a href="" class="gray">5</a>
+                        <a href="" class="gray">6</a>
+                        <a href="" class="gray">...</a>
+                        <a href="" class="gray">20</a>
+                        <a href>&gt;</a>
+                    </div>
+                    <button class="view_all">
+                        <h4>View All</h4>
+                    </button>
+                </div>
+   <section class="feature_box">
+      <div class="el_box">
+         <img src="Images/car.png" class="feature_box-img">
+         <div class="feature_box-title">Free Delivery</div>
+         <div class="feature_box-subtitle">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</div>
+      </div>
+      <div class="el_box">
+         <img src="Images/Sale.png" class="feature_box-img">
+         <div class="feature_box-title">Sales & discounts</div>
+         <div class="feature_box-subtitle">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</div>
+      </div>
+      <div class="el_box">
+         <img src="Images/Quality.png" class="feature_box-img">
+         <div class="feature_box-title">Free Delivery</div>
+         <div class="feature_box-subtitle">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</div>
+      </div>
+
+   </section>
+   <div class="subscribe" id="subcribe_product">
+      <div class="gr">
+         <div class="first">
+            <p><i>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                  a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</i></p>
+            <p><span>Bin Burhan<br></span>Dhaka, Bd</p>
+            <div class="rectangle">
+               <div style="background:#d6d6d6 "></div>
+               <div style="background: #f16d7f; "></div>
+            </div>
+         </div>
+   
+         <div class="second">
+            <p><span>Subscribe</span><br>FOR OUR NEWLETTER AND PROMOTION</p>
+            <div>
+               <input type="email" name="email" placeholder="Enter Your Email">
+               <button><a href="#3">Subscribe</a></button>
+            </div>
+   
+   
+         </div>
+      </div>
+      <div class="line"></div>
+   </div>
+   <footer class="footer">
+      <div class="part">
+         <div class="first_col">
+            <p class="logo">Bran<span>d</span></p>
+            <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate
+               multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+               processes and cross-unit partnerships. </p>
+            <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
+               Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+         </div>
+         <div class="column">
+            <h3>Company</h3>
+            <lu>
+               <li><a href="#5">Home </a></li>
+               <li><a href="#5">Shop</a></li>
+               <li><a href="#5">About</a></li>
+               <li><a href="#5">How It Works</a></li>
+               <li><a href="#5">Contact</a></li>
+            </lu>
+         </div>
+         <div class="column">
+            <h3>Information</h3>
+            <lu>
+               <li><a href="#5">Tearms & Condition</a></li>
+               <li><a href="#5">Privacy Policy</a></li>
+               <li><a href="#5">How to Buy</a></li>
+               <li><a href="#5">How to Sell</a></li>
+               <li><a href="#5">Promotion</a></li>
+            </lu>
+         </div>
+         <div class="column">
+            <h3>Shop Category</h3>
+            <lu>
+               <li><a href="#5">Men</a></li>
+               <li><a href="#5">Women</a></li>
+               <li><a href="#5">Child</a></li>
+               <li><a href="#5">Apparel</a></li>
+               <li><a href="#5">Brows All</a></li>
+            </lu>
+         </div>
+      </div>
+      <div class="part">
+         <p class="br">© 2017 Brand All Rights Reserved.</p>
+         <div>
+            <div class="links">
+               <a href="#fb" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+               <a href="#tw" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+               <a href="#in" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+               <a href="#pin" class="pin"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+               <a href="#g+" class="gp"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+
+
+
+</body>
