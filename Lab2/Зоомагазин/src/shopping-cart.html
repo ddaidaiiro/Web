@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Доставкаt</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+<header class="header">
+    <logo class="logo">Зоо<span>Магазин</span> <i class="fa fa-paw" aria-hidden="true"></i></logo>
+    <div class="search">
+        <select class="mmenuu" name="type">
+            <option disabled selected>Поиск</option>
+            <option value="">Главная</option>
+            <option value="">Собакам</option>
+            <option value="">Кошкам</option>
+            <option value="">Доставка</option>
+        </select>
+        <input type="text" placeholder="Введите запрос.." class="input_search">
+        <button class="button_search"><a href="#button"><i class="fa fa-search"></i></a></button>
+    </div>
+    <div class=div_but>
+        <a href="shopping-cart.html"><img src="Images/shop_Cart.svg" width="41" height="36" alt="Пример" class="shop_cart"></a>
+        <button class="myacc"><a href="#acc" class="myaccount">Мой профиль</a></button>
+    </div>
+</header>
+
+<menu class="menu">
+    <a href="index.html">Главная</a>
+    <a href="single-page.html">Собакам</a>
+    <a href="product.html">Кошкам</a>
+    <a href="checkout.html">Доставка</a>
+</menu>
+<div class="nav">
+    <p>Новые поступления</p>
+    <p><a href="#hf">Главная/<span> Доставка</span> </a></p>
+</div>
+      <div class="wrapper">
+            <table class="buy_table">
+                <tr style="height: 40px;">
+                    <th style="text-align: left;">ИНФОРМАЦИЯ</th>
+                    <th>ЦЕНА</th>
+                    <th>КОЛИЧЕСТВО</th>
+                    <th>ДОСТАВКА</th>
+                    <th>СУММА</th>
+                    <th>ДЕЙСТВИЕ</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="display: flex;">
+                            <img src="Images/miska1.jpg" alt="" style="height: 130px; width: 130px;" >
+                            <div class="buy_descr">
+                                <h4 style="margin-bottom: 50px;">Миска керамика для кошек</h4>
+                                <span class="thing_params">
+                                    <p style="font-weight: 200;"><b>Color: </b>Gray</p>
+                                 </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="d_gray">$150</td>
+                    <td>
+                        <input type="text" name="" id="" style="width: 40%; height: 25px;">
+                    </td>
+                    <td class="d_gray">FREE</td>
+                    <td class="d_gray">$300</td>
+                    <td>
+                        <button class="transparent_btn">
+                            <img src="Images/del_thing.png" alt="">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="display: flex;">
+                            <img src="Images/miska2.jpg" alt="" style="height: 130px; width: 130px;" >
+                            <div class="buy_descr">
+                                <h4 style="margin-bottom: 50px;">Миска керамика для кошек</h4>
+                                <span class="thing_params">
+                                    <p style="font-weight: 200;"><b>Color: </b>Gray</p>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="d_gray">$150</td>
+                    <td>
+                        <input type="text" name="" id="" style="width: 40%; height: 25px;">
+                    </td>
+                    <td class="d_gray">FREE</td>
+                    <td class="d_gray">$300</td>
+                    <td>
+                        <button class="transparent_btn">
+                            <img src="Images/del_thing.png" alt="">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="display: flex;">
+                            <img src="Images/miska3.jpg" alt="" style="height: 130px; width: 130px;">
+                            <div class="buy_descr">
+                                <h4 style="margin-bottom: 50px;">Миска керамика для кошек</h4>
+                                <span class="thing_params">
+                                    <p style="font-weight: 200;"><b>Color: </b>Gray</p>
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="d_gray">$150</td>
+                    <td>
+                        <input type="text" name="" id="" style="width: 40%; height: 25px;">
+                    </td>
+                    <td class="d_gray">FREE</td>
+                    <td class="d_gray">$300</td>
+                    <td>
+                        <button class="transparent_btn">
+                            <img src="Images/del_thing.png" alt="">
+                        </button>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="shopping_buttons">
+                <button class="shp_button d_gray" style="width: 250px;">ОЧИСТИТЬ</button>
+                <button class="shp_button d_gray" style="width: 250px;">ПРОДОЛЖИТЬ</button>
+            </div>
+
+            <div class="payment_commit">
+                <div class="pay_commit_block">
+                    <h4 class="shp_address_elem">АДРЕС ДОСТАВКИ</h4>
+                    <select name="" id="" class="shp_address_elem pay_commit_input">
+                        <option>ДОНЕЦК</option>
+                    </select>
+                    <input type="text" class="shp_address_elem pay_commit_input" name="" id="" placeholder="Район">
+                    <input type="text" class="shp_address_elem pay_commit_input" name="" id=""
+                        placeholder="Почтовый индекс">
+                    <button class="shp_address_elem shp_button" style="width: 130px;">Сохранить</button>
+                </div>
+                <div class="pay_commit_block">
+                    <h4 class="shp_address_elem">Скидка по купону</h4>
+                    <h5 class="shp_address_elem">Введите ваш купон</h5>
+                    <input type="text" class="pay_commit_input shp_address_elem" name="" id="" placeholder="Купон">
+                    <button class="shp_button" style="width: 200px;">ДОБАВИТЬ КУПОН</button>
+                </div>
+                <div class="pay_commit_block" id="buy_confirm">
+                    <div id="final">
+                        <h5 id="total_sum">СУММА $900</h5>
+                        <br>
+                        <div id="combine_row">
+                            <h4>ОБЩАЯ СУММА<h4>
+                            <h4 class="blue">$900</h4>
+                        </div><br>
+                        <hr><b></b>
+                        <button class="light" id="proceed">ОФОРМИТЬ ЗАКАЗ</button>
+                    </div>
+                </div>
+            </div>
+      </div>
+    <div class="subscribe">
+        <div class="gr">
+            <div class="first">
+                <p><i>Порой мне кажется, что я продолжаю жить из вежливости и что мое сердце бьется только благодаря моей
+                        любви к животным.</i></p>
+                <p><span>Ромен Гари</span></p>
+                <div class="rectangle">
+                    <div style="background:#d6d6d6 "></div>
+                    <div style="background:#6dd9f1"></div>
+                </div>
+            </div>
+            <div class="second">
+                <p><span>Подписаться</span><br>Для писем и рекламы</p>
+                <div>
+                    <input type="email" name="email" placeholder="Вставьте ваш  e-mail">
+                    <button><a href="#3">Подписаться</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+    <footer class="footer">
+        <div class="part">
+            <div class="first_col">
+                <p class="logo">Зоо<span>Магазин</span></p>
+                <p>Нельзя к животным подходить с человеческой меркой. Их мир старше нашего и совершеннее, и сами они —
+                    существа более
+                    законченные и совершенные, чем мы с вами. Животные -не меньшие братья и не бедные родственники, они —
+                    иные народы,
+                    вместе с нами попавшие в сеть жизни, в сеть времени; такие же, как и мы, пленники земного великолепия и
+                    земных страданий</p>
+                <p>Животные – наши соседи по планете.</p>
+            </div>
+            <div class="column">
+                <h3>Компания</h3>
+                <lu>
+                    <li><a href="#5">Главная </a></li>
+                    <li><a href="#5">Магазин</a></li>
+                    <li><a href="#5">Про нас</a></li>
+                    <li><a href="#5">Контакты</a></li>
+                </lu>
+            </div>
+            <div class="column">
+                <h3>Информация</h3>
+                <lu>
+                    <li><a href="#5">Правила</a></li>
+                    <li><a href="#5">Как купить</a></li>
+                    <li><a href="#5">Как добраться к нам</a></li>
+                    <li><a href="#5">Реклама</a></li>
+                </lu>
+            </div>
+            <div class="column">
+                <h3>Категории</h3>
+                <lu>
+                    <li><a href="#5">Кошкам</a></li>
+                    <li><a href="#5">Собакам</a></li>
+                    <li><a href="#5">Доставка</a></li>
+                </lu>
+            </div>
+        </div>
+        <div class="part">
+            <p class="br">© 2017 Brand All Rights Reserved.</p>
+            <div>
+                <div class="links">
+                    <a href="#fb" class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#tw" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#in" class="in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#pin" class="pin"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href="#g+" class="gp"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+      
+
+            
+
+            
+            
+      
+      
+      
+      
+      
+     
+</body>
