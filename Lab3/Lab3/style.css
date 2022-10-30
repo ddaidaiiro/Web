@@ -1,0 +1,222 @@
+
+/*6*/
+.sprite_container {
+   height: 346px;
+   display: flex;
+   align-items: center;
+   background-color: rgb(255, 210, 210);
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.sprite_image {
+   height: 346px;
+   width: 2252px;
+}
+
+.sprite_container:hover .sprite_image {
+   background: url(man.png);
+   animation: write 1s steps(8) infinite;
+}
+
+@keyframes write {
+   100% {
+      background-position: -2450px;
+   }
+}
+/*8*/
+.anim8 {
+   position: relative;
+   margin: 4%;
+   width: 300px;
+   height: 300px;
+   background: rgb(255, 210, 210);
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.anim8 label {
+   position: absolute;
+   top: 20%;
+   left: 10%;
+   font-size: 30px;
+   height: 15%;
+   width: 80%;
+   color: white;
+
+}
+
+.anim8 input {
+   position: absolute;
+   width: 80%;
+   top: 40%;
+   left: 7%;
+   height: 15%;
+   background: #e3d1de;
+   border: none
+}
+
+.anim8 input:focus~label {
+   animation-name: label;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+}
+
+@keyframes label {
+   from {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+   }
+
+   to {
+      -webkit-transform: translateX(25%);
+      transform: translateX(20%);
+   }
+}
+.grid{
+   display: flex;
+   justify-content: space-between;
+}
+.anim7 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.anim7 div:nth-of-type(1) {
+   animation: state 1s 0s steps(2, jump-none) reverse infinite;
+
+   height: 5px;
+   width: 5px;
+   background-color: gray;
+   box-shadow: 5px 0px gray, 10px 0px gray, 15px 0px gray, 20px 0px gray, 25px 0px gray, 30px 0px gray, 35px 0px gray, 40px 0px gray,
+
+      -5px 5px gray, 0px 5px gray, 5px 5px white, 10px 5px gray, 15px 5px gray, 20px 5px gray, 25px 5px gray, 30px 5px gray, 35px 5px gray, 40px 5px gray, 45px 5px gray,
+
+      -5px 10px gray, 0px 10px gray, 5px 10px gray, 10px 10px gray, 15px 10px gray, 20px 10px gray, 25px 10px gray, 30px 10px gray, 35px 10px gray, 40px 10px gray, 45px 10px gray,
+
+      -5px 15px gray, 0px 15px gray, 5px 15px gray, 10px 15px gray, 15px 15px gray, 20px 15px gray, 25px 15px gray, 30px 15px gray, 35px 15px gray, 40px 15px gray, 45px 15px gray,
+
+      -5px 20px gray, 0px 20px gray, 5px 20px gray, 10px 20px gray, 15px 20px gray, 20px 20px gray, 25px 20px gray, 30px 20px gray, 35px 20px gray, 40px 20px gray, 45px 20px gray,
+
+      -5px 25px gray, 0px 25px gray, 5px 25px gray, 10px 25px gray, 15px 25px gray,
+
+      -25px 30px gray, -20px 30px gray, -10px 30px gray, -5px 30px gray, 0px 30px gray, 5px 30px gray, 10px 30px gray, 15px 30px gray, 20px 30px gray, 25px 30px gray, 30px 30px gray, 35px 30px gray,
+
+      -55px 35px gray, -20px 35px gray, -15px 35px gray, -10px 35px gray, -5px 35px gray, 0px 35px gray, 5px 35px gray, 10px 35px gray,
+
+      -55px 40px gray, -20px 40px gray, -15px 40px gray, -10px 40px gray, -5px 40px gray, 0px 40px gray, 5px 40px gray, 10px 40px gray,
+
+      -55px 45px gray, -50px 45px gray, -25px 45px gray, -20px 45px gray, -15px 45px gray, -10px 45px gray, -5px 45px gray, 0px 45px gray, 5px 45px gray, 10px 45px gray,
+
+      -55px 50px gray, -50px 50px gray, -45px 50px gray, -30px 50px gray, -25px 50px gray, -20px 50px gray, -15px 50px gray, -10px 50px gray, -5px 50px gray, 0px 50px gray, 5px 50px gray, 10px 50px gray, 15px 50px gray, 20px 50px,
+
+      -55px 55px gray, -50px 55px gray, -45px 55px gray, -40px 55px gray, -35px 55px gray, -30px 55px gray, -25px 55px gray, -20px 55px gray, -15px 55px gray, -10px 55px gray, -5px 55px gray, 0px 55px gray, 5px 55px gray, 10px 55px gray, 20px 55px gray,
+
+      -50px 60px gray, -45px 60px gray, -40px 60px gray, -35px 60px gray, -30px 60px gray, -25px 60px gray, -20px 60px gray, -15px 60px gray, -10px 60px gray, -5px 60px gray, 0px 60px gray, 5px 60px gray, 10px 60px gray,
+
+      -45px 65px gray, -40px 65px gray, -35px 65px gray, -30px 65px gray, -25px 65px gray, -20px 65px gray, -15px 65px gray, -10px 65px gray, -5px 65px gray, 0px 65px gray, 5px 65px gray,
+
+      -40px 70px gray, -35px 70px gray, -30px 70px gray, -25px 70px gray, -20px 70px gray, -15px 70px gray, -10px 70px gray, -5px 70px gray, 0px 70px gray,
+
+      -35px 75px gray, -30px 75px gray, -25px 75px gray, -20px 75px gray, -15px 75px gray, -10px 75px gray, -5px 75px gray,
+
+      -30px 80px gray, -25px 80px gray, -20px 80px gray, -5px 80px gray, 0px 80px gray,
+
+      -30px 85px gray, -25px 85px gray,
+
+      -30px 90px gray,
+
+      -30px 95px gray, -25px 95px gray;
+}
+
+.anim7 div:nth-of-type(2) {
+   animation: state 1s 0s steps(2, jump-none) infinite;
+
+   height: 5px;
+   width: 5px;
+   background-color: gray;
+   box-shadow: 0px -5px gray, 5px -5px gray, 10px -5px gray, 15px -5px gray, 20px -5px gray, 25px -5px gray, 30px -5px gray, 35px -5px gray, 40px -5px gray,
+
+      -5px 0px gray, 0px 0px gray, 5px 0px white, 10px 0px gray, 15px 0px gray, 20px 0px gray, 25px 0px gray, 30px 0px gray, 35px 0px gray, 40px 0px gray, 45px 0px gray,
+
+      -5px 5px gray, 0px 5px gray, 5px 5px gray, 10px 5px gray, 15px 5px gray, 20px 5px gray, 25px 5px gray, 30px 5px gray, 35px 5px gray, 40px 5px gray, 45px 5px gray,
+
+      -5px 10px gray, 0px 10px gray, 5px 10px gray, 10px 10px gray, 15px 10px gray, 20px 10px gray, 25px 10px gray, 30px 10px gray, 35px 10px gray, 40px 10px gray, 45px 10px gray,
+
+      -5px 15px gray, 0px 15px gray, 5px 15px gray, 10px 15px gray, 15px 15px gray, 20px 15px gray, 25px 15px gray, 30px 15px gray, 35px 15px gray, 40px 15px gray, 45px 15px gray,
+
+      -5px 20px gray, 0px 20px gray, 5px 20px gray, 10px 20px gray, 15px 20px gray,
+
+      -10px 25px gray, -5px 25px gray, 0px 25px gray, 5px 25px gray, 10px 25px gray, 15px 25px gray,
+
+      -25px 30px gray, -20px 30px gray, -15px 30px gray, -10px 30px gray, -5px 30px gray, 0px 30px gray, 5px 30px gray, 10px 30px gray, 15px 30px gray, 20px 30px gray, 25px 30px gray, 30px 30px gray, 35px 30px gray,
+
+      -55px 35px gray, -20px 35px gray, -15px 35px gray, -10px 35px gray, -5px 35px gray, 0px 35px gray, 5px 35px gray, 10px 35px gray,
+
+      -55px 40px gray, -20px 40px gray, -15px 40px gray, -10px 40px gray, -5px 40px gray, 0px 40px gray, 5px 40px gray, 10px 40px gray, 15px 40px gray, 20px 40px,
+
+      -55px 45px gray, -50px 45px gray, -25px 45px gray, -20px 45px gray, -15px 45px gray, -10px 45px gray, -5px 45px gray, 0px 45px gray, 5px 45px gray, 10px 45px gray, 20px 45px gray,
+
+      -55px 50px gray, -50px 50px gray, -45px 50px gray, -30px 50px gray, -25px 50px gray, -20px 50px gray, -15px 50px gray, -10px 50px gray, -5px 50px gray, 0px 50px gray, 5px 50px gray, 10px 50px gray,
+
+      -55px 55px gray, -50px 55px gray, -45px 55px gray, -40px 55px gray, -35px 55px gray, -30px 55px gray, -25px 55px gray, -20px 55px gray, -15px 55px gray, -10px 55px gray, -5px 55px gray, 0px 55px gray, 5px 55px gray, 10px 55px gray,
+
+      -50px 60px gray, -45px 60px gray, -40px 60px gray, -35px 60px gray, -30px 60px gray, -25px 60px gray, -20px 60px gray, -15px 60px gray, -10px 60px gray, -5px 60px gray, 0px 60px gray, 5px 60px gray, 10px 60px gray,
+
+      -45px 65px gray, -40px 65px gray, -35px 65px gray, -30px 65px gray, -25px 65px gray, -20px 65px gray, -15px 65px gray, -10px 65px gray, -5px 65px gray, 0px 65px gray, 5px 65px gray,
+
+      -40px 70px gray, -35px 70px gray, -30px 70px gray, -25px 70px gray, -20px 70px gray, -15px 70px gray, -10px 70px gray, -5px 70px gray, 0px 70px gray,
+
+      -35px 75px gray, -30px 75px gray, -25px 75px gray, -20px 75px gray, -15px 75px gray, -10px 75px gray, -5px 75px gray,
+
+      -30px 80px gray, -25px 80px gray, -10px 80px gray, -5px 80px gray,
+
+      -25px 85px gray, -20px 85px gray, -5px 85px gray,
+
+      -5px 90px gray,
+
+      -5px 95px gray, 0px 95px;
+}
+
+.anim7 div:nth-of-type(3) {
+   animation: state 1s 0s steps(2, jump-none) reverse infinite;
+
+   height: 3px;
+   width: 3px;
+   background-color: gray;
+   box-shadow: -85px 80px gray, -80px 80px gray, -75px 80px gray, -70px 80px gray, -65px 80px gray, -60px 80px gray, -55px 80px gray, 5px 80px gray, 10px 80px gray, 15px 80px gray, 20px 80px gray, 25px 80px gray, 30px 80px gray, 35px 80px gray, 40px 80px gray, 45px 80px gray, 50px 80px gray,
+
+      -85px 90px gray, -80px 90px gray, -75px 90px gray,
+
+      40px 100px gray, 45px 100px gray,
+
+      -50px 105px gray, -45px 105px gray
+}
+
+.anim7 div:nth-of-type(4) {
+   animation: state 1s 0s steps(2, jump-none) infinite;
+
+   height: 3px;
+   width: 3px;
+   background-color: white;
+   box-shadow: -85px 80px gray, -80px 80px gray, -75px 80px gray, -70px 80px gray, -65px 80px gray, -60px 80px gray, -55px 80px gray, 5px 80px gray, 10px 80px gray, 15px 80px gray, 20px 80px gray, 25px 80px gray, 30px 80px gray, 35px 80px gray, 40px 80px gray, 45px 80px gray, 50px 80px gray,
+
+      30px 90px gray, 35px 90px gray, 40px 90px gray,
+
+      -60px 100px gray, -55px 100px gray,
+
+      20px 105px gray, 25px 105px gray,
+
+      -75px 115px gray, -70px 115px gray
+}
+
+@keyframes state {
+   0% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
+   }
+}
