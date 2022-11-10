@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BORODINSKI - Product Detail Page">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#0134d4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Title -->
+  <title>Product</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/tiny-slider.css">
+  <link rel="stylesheet" href="css/baguetteBox.min.css">
+  <link rel="stylesheet" href="css/rangeslider.css">
+  <link rel="stylesheet" href="css/vanilla-dataTables.min.css">
+  <link rel="stylesheet" href="css/apexcharts.css">
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span></div>
+  </div>
+  <!-- Internet Connection Status -->
+  <!-- # This code for showing internet connection status -->
+  <div class="internet-connection-status" id="internetStatus"></div>
+  <!-- Dark mode switching -->
+  <div class="dark-mode-switching">
+    <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+      <div class="dark-mode-text text-center">
+        <svg class="bi bi-moon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"></path>
+        </svg>
+        <p class="mb-0">Темный режим</p>
+      </div>
+      <div class="light-mode-text text-center">
+        <svg class="bi bi-brightness-high" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg>
+        <p class="mb-0">Светлый режим</p>
+      </div>
+    </div>
+  </div>
+  <!-- Header Area -->
+  <div class="header-area" id="headerArea">
+    <div class="container">
+      <!-- # Paste your Header Content from here -->
+      <!-- # Header Five Layout -->
+      <!-- # Copy the code from here ... -->
+      <!-- Header Content -->
+      <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
+        <!-- Navbar Toggler -->
+        <div class="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas" data-bs-target="#affanOffcanvas" aria-controls="affanOffcanvas"><span class="d-block"></span><span class="d-block"></span><span class="d-block"></span></div>
+        <!-- Page Title-->
+        <div class="page-heading">
+          <h6 class="mb-0">Магазин</h6>
+        </div>
+        <!-- Logo Wrapper -->
+        <div class="logo-wrapper"><a href="index.html"><img src="img/core-img/logo.png" alt=""></a></div>
+      </div>
+      <!-- # Header Five Layout End -->
+    </div>
+  </div>
+  <!-- # Sidenav Left -->
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1" aria-labelledby="affanOffcanvsLabel">
+    <button class="btn-close btn-close-white text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas-body p-0">
+      <!-- Side Nav Wrapper -->
+      <div class="sidenav-wrapper">
+        <!-- Sidenav Profile -->
+        <div class="sidenav-profile bg-gradient">
+          <div class="sidenav-style1"></div>
+          <!-- User Thumbnail -->
+          <div class="user-profile"><img src="img/bg-img/profile.png" alt=""></div>
+          <!-- User Info -->
+          <div class="user-info">
+            <h6 class="user-name mb-0">Профиль</h6><span>_user-name_</span>
+          </div>
+        </div>
+        <!-- Sidenav Nav -->
+        <ul class="sidenav-nav ps-0">
+          <li><a href="index.html"><i class="bi bi-house"></i>Главная</a></li>
+          <li><a href="service.html"><i class="bi bi-scissors"></i>Услуги</a></li>
+          <li><a href="shop.html"><i class="bi bi-bag"></i>Магазин</a></li>
+          <li><a href="about.html"><i class="bi bi-hospital"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
+            <path
+              d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+          </svg>
+          <path d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z" />
+                </svg></i>Про нас</a></li>
+          <li><a href="contacts.html"><i class="bi bi-person"></i>Контакты</a></li>
+          <li>
+            <div class="night-mode-nav"><i class="bi bi-moon"></i>Темная
+              <div class="form-check form-switch">
+                <input class="form-check-input form-check-success" id="darkSwitch" type="checkbox">
+              </div>
+            </div>
+          </li>
+          <li><a href="#"><i class="bi bi-box-arrow-right"></i>Выход</a></li>
+        </ul>
+        <!-- Social Info -->
+        <div class="social-info-wrap"><a href="#"><i class="bi bi-telegram"></i></a><a href="#"><i class="bi bi-github"></i></a><a href="#"><i class="bi bi-instagram"></i></a></div>
+        <!-- Copyright Info -->
+        <div class="copyright-info">
+          <p>2022 &copy; Made by<a href="https://vk.com/ddaidaiiro">ddaidaiiro</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Shop Detail -->
+  <div class="page-content-wrapper py-3">
+    <div class="container">
+      <div class="card product-details-card mb-3">
+        <span class="badge bg-warning text-dark position-absolute product-badge">Скидка -20%</span>
+        <div class="card-body">
+          <div class="product-gallery-wrapper">
+            <div class="product-gallery"><a href="img/products-img/vosk1.jpg"><img class="rounded" src="img/products-img/vosk1.jpg" alt=""></a><a href="img/products-img/vosk2.jpg"><img class="rounded" src="img/products-img/vosk2.jpg" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="card product-details-card mb-3 direction-rtl">
+        <div class="card-body">
+          <h3 style="color:red ; text-align:center">Скидки на весь воск! Только сегодня! </h3>
+          <h1 style="color:red ; text-align:center">$9.89</h1>
+          <p>Уникальная смесь из натурального воска, белка сои и кокосового масла.
+          Воск-бальзам не только отлично фиксирует форму бороды и усов, но и ухаживает за волосами, делая их мягче, препятствует
+          их ломкости, добавляет легкое сияние.
+          Отлично фиксирует форму бороды и усов.</p>
+          <form action="#">
+            <div class="input-group">
+              <input class="input-group-text form-control" type="number" value="1">
+              <button class="btn btn-primary w-50" type="submit">Добавить в корзину</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card product-details-card mb-3 direction-rtl">
+        <div class="card-body">
+          <h5>Описание</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum soluta tempore tenetur provident eligendi porro, eius nulla? Aliquam, blanditiis id. Corporis.</p>
+          <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ut fugit accusantium quo quidem magni laboriosam!</p>
+          <div class="rating-card-two mt-4">
+            <!-- Rating result -->
+            <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+              <div class="rating"><a href="#"><i class="bi bi-star-fill"></i></a><a href="#"><i class="bi bi-star-fill"></i></a><a href="#"><i class="bi bi-star-fill"></i></a><a href="#"><i class="bi bi-star-fill"></i></a><a href="#"><i class="bi bi-star-half"></i></a></div><span>4.44 out of 5 ratings</span>
+            </div>
+            <!-- Rating Details -->
+            <div class="rating-detail">
+              <!-- Single Rating Details -->
+              <div class="d-flex align-items-center mt-2"><span>5 star</span>
+                <div class="progress-bar-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" style="width: 78%;" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div><span>78%</span>
+              </div>
+              <!-- Single Rating Details -->
+              <div class="d-flex align-items-center mt-2"><span>4 star</span>
+                <div class="progress-bar-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" style="width: 14%;" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div><span>14%</span>
+              </div>
+              <!-- Single Rating Details -->
+              <div class="d-flex align-items-center mt-2"><span>3 star</span>
+                <div class="progress-bar-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" style="width: 8%;" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div><span>8%</span>
+              </div>
+              <!-- Single Rating Details -->
+              <div class="d-flex align-items-center mt-2"><span>2 star</span>
+                <div class="progress-bar-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" style="width: 0%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div><span>0%</span>
+              </div>
+              <!-- Single Rating Details -->
+              <div class="d-flex align-items-center mt-2"><span>1 star</span>
+                <div class="progress-bar-wrapper">
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" style="width: 0%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div><span>0%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Content -->
+  <div class="footer-nav position-relative shadow-sm footer-style-two" style="position: fixed !important; bottom: 0; left: 0; right: 0; z-index: 1000">
+    <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+      <li><a href="index.html">
+        <svg class="bi bi-house" width="24" height="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"></path>
+          <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"></path>
+        </svg></a></li>
+      <li><a href="service.html">
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+  <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61 3.5 3.5zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+</svg>
+      <li class="active"><a href="shop.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+        </svg></a></li>
+      <li><a href="cart.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg></a></li>
+    </ul>
+    <!-- # Footer Two Layout End -->
+  </div>
+
+
+
+
+
+
+  <!-- All JavaScript Files -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slideToggle.min.js"></script>
+  <script src="js/internet-status.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/baguetteBox.min.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script src="js/vanilla-dataTables.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/magic-grid.min.js"></script>
+  <script src="js/dark-rtl.js"></script>
+  <script src="js/active.js"></script>
+  <!-- PWA -->
+  <script src="pwa.js"></script>
+</body>
+</html>
